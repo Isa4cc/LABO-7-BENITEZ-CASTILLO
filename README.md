@@ -49,8 +49,8 @@ Porque el fractal está hecho de copias de sí mismo. Un triángulo de Sierpinsk
 de nivel 5 contiene exactamente tres triángulos de Sierpinski de nivel 4
 adentro. Y cada uno de esos tiene tres de nivel 3. Y así para siempre.
 
-Cuando un problema tiene esa forma — "el todo está hecho de partes que son
-iguales al todo pero más chicas" — la recursión lo describe de manera natural
+Cuando un problema tiene esa forma "el todo está hecho de partes que son
+iguales al todo pero más chicas", la recursión lo describe de manera natural
 y directa. Intentar resolverlo de otra forma sería como explicar con palabras
 algo que con un dibujo se entiende en dos segundos.
 
