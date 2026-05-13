@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Compiled class files
+*.class
+
+# Output directory
+out/
+
+# Log files
+*.log
+
+# Other
+.DS_Store
