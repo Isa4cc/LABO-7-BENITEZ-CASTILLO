@@ -24,12 +24,12 @@ public class PanelControles extends JPanel {
         setBackground(Tema.FONDO_PANEL);
         setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Tema.BORDE));
 
-        // ── Etiqueta ──────────────────────────────────────────
+        // Etiqueta
         JLabel lbl = new JLabel("Nivel de recursión:");
         lbl.setFont(new Font("Monospaced", Font.BOLD, 13));
         lbl.setForeground(new Color(0xA8C4DC));
 
-        // ── Campo de texto ────────────────────────────────────
+        // Campo de texto
         campoNivel = new JTextField(String.valueOf(nivelInicial), 4);
         campoNivel.setFont(new Font("Monospaced", Font.BOLD, 20));
         campoNivel.setBackground(new Color(0x0F1923));
@@ -41,7 +41,7 @@ public class PanelControles extends JPanel {
         ));
         campoNivel.setHorizontalAlignment(JTextField.CENTER);
 
-        // ── Botón ─────────────────────────────────────────────
+        // Botón
         JButton btnDibujar = new JButton("Dibujar ▶");
         btnDibujar.setFont(new Font("Monospaced", Font.BOLD, 13));
         btnDibujar.setBackground(new Color(0x1E3A5F));
@@ -53,12 +53,12 @@ public class PanelControles extends JPanel {
         btnDibujar.setFocusPainted(false);
         btnDibujar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
-        // ── Mensaje de error ──────────────────────────────────
+        // Mensaje de error
         lblError = new JLabel(" ");
         lblError.setFont(new Font("Monospaced", Font.ITALIC, 11));
         lblError.setForeground(new Color(0xFF4444));
 
-        // ── Acción compartida (botón y Enter) ─────────────────
+        // Acción compartida (botón y Enter)
         Runnable accion = () -> {
             try {
                 int nivel = Integer.parseInt(campoNivel.getText().trim());
@@ -76,7 +76,7 @@ public class PanelControles extends JPanel {
         btnDibujar.addActionListener((ActionEvent e) -> accion.run());
         campoNivel.addActionListener((ActionEvent e) -> accion.run());
 
-        // ── Ensamblar ─────────────────────────────────────────
+        // Ensamblar
         add(lbl);
         add(campoNivel);
         add(btnDibujar);

@@ -39,9 +39,7 @@ public class PanelDibujo extends JPanel {
         repaint();
     }
 
-    // ─────────────────────────────────────────────────────────
     //  PINTURA
-    // ─────────────────────────────────────────────────────────
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);

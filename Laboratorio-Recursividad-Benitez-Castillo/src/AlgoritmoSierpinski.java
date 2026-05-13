@@ -51,13 +51,11 @@ public class AlgoritmoSierpinski {
         sierpinski(g2, nivel, a, b, c);
     }
 
-    // ─────────────────────────────────────────────────────────
     //  MÉTODO RECURSIVO PRIVADO
-    // ─────────────────────────────────────────────────────────
     private void sierpinski(Graphics2D g2, int nivel,
                             Point a, Point b, Point c) {
 
-        // ── CASO BASE ────────────────────────────────────────
+        // CASO BASE
         if (nivel == 0) {
             Color color = Tema.NIVEL_COLORES[0];   // naranja
 
@@ -73,7 +71,7 @@ public class AlgoritmoSierpinski {
             return;   // <── detiene la recursión
         }
 
-        // ── CASO RECURSIVO ───────────────────────────────────
+        // CASO RECURSIVO
 
         // Paso 1: calcular los 3 puntos medios
         //   M1 = medio de A-B (lado izquierdo)
@@ -93,9 +91,7 @@ public class AlgoritmoSierpinski {
         sierpinski(g2, nivel - 1, m3, m2, c );   // subtriángulo inf-derecho
     }
 
-    // ─────────────────────────────────────────────────────────
     //  MÉTODOS AUXILIARES
-    // ─────────────────────────────────────────────────────────
 
     /**
      * Devuelve el punto medio entre P y Q.
@@ -126,9 +122,8 @@ public class AlgoritmoSierpinski {
         g2.drawPolygon(xs, ys, 3);
     }
 
-    // ─────────────────────────────────────────────────────────
+
     //  UTILIDADES ESTÁTICAS (sin estado, reutilizables)
-    // ─────────────────────────────────────────────────────────
 
     /** Calcula cuántos triángulos se dibujan para un nivel N → 3^N */
     public static long contarTriangulos(int nivel) {

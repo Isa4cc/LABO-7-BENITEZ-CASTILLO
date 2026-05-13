@@ -11,7 +11,7 @@ import java.awt.Color;
  */
 public class Tema {
 
-    // ── Colores de fondo y bordes ─────────────────────────────
+    // Colores de fondo y bordes
     public static final Color FONDO         = new Color(0x0F1923);
     public static final Color FONDO_PANEL   = new Color(0x1A2636);
     public static final Color BORDE         = new Color(0x1E3A5F);
